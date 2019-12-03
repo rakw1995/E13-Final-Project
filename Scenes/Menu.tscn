@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Start.gd" type="Script" id=1]
+
+[node name="Menu" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="."]
+margin_left = 5.0
+margin_top = 111.0
+margin_right = 1021.0
+margin_bottom = 125.0
+text = "REVELATION"
+align = 1
+
+[node name="Start" type="Button" parent="."]
+margin_left = 474.0
+margin_top = 274.0
+margin_right = 486.0
+margin_bottom = 294.0
+text = "Start Game"
+script = ExtResource( 1 )
+[connection signal="pressed" from="Start" to="Start" method="_on_Start_pressed"]
