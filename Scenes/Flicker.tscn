@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="Animation" id=3]
+resource_name = "flicker"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("OmniLight:omni_range")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5, 0.7, 1, 1.2, 1.5, 1.7, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 12.5919, 11.3957, 10.5983, 13.6454, 19.8886, 20.1902, 22.5834, 14.3645, 15.6924 ]
+}
+
+[node name="Flicker" type="AnimationPlayer"]
+autoplay = "flicker"
+anims/flicker = SubResource( 3 )
