@@ -1,10 +1,12 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Scenes/Character.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Scenes/Fireball.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Metal18_col.jpg" type="Texture" id=1]
+[ext_resource path="res://Scenes/Character.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Fireball.tscn" type="PackedScene" id=3]
 
 [sub_resource type="SpatialMaterial" id=1]
-albedo_color = Color( 0.572549, 0.00784314, 0.00784314, 1 )
+albedo_color = Color( 0.270588, 0.298039, 0.47451, 1 )
+albedo_texture = ExtResource( 1 )
 
 [node name="Revelation" type="Spatial"]
 
@@ -17,15 +19,15 @@ height = 7.0
 depth = 40.0
 material = SubResource( 1 )
 
-[node name="Character" parent="." instance=ExtResource( 1 )]
+[node name="Character" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 13.2986 )
 
 [node name="Flames" type="Node" parent="."]
 
 [node name="Fire" parent="Flames" groups=[
 "Fire",
-] instance=ExtResource( 2 )]
-transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -6, 2, 7 )
+] instance=ExtResource( 3 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -6.11451, 3.93518, 7 )
 
 [node name="OmniLight" type="OmniLight" parent="Flames/Fire"]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0.916327, 2.01202, 0 )
@@ -36,8 +38,8 @@ omni_range = 6.87093
 
 [node name="Fire2" parent="Flames" groups=[
 "Fire",
-] instance=ExtResource( 2 )]
-transform = Transform( 0.3, 0, 0, 0, 0.8, 0, 0, 0, 0.7, 16.0664, 3, -5 )
+] instance=ExtResource( 3 )]
+transform = Transform( 0.3, 0, 0, 0, 0.8, 0, 0, 0, 0.7, 16.0664, 1.38872, -5 )
 
 [node name="OmniLight2" type="OmniLight" parent="Flames/Fire2"]
 transform = Transform( 3.33333, 0, 0, 0, 1.25, 0, 0, 0, 1.42857, 0.00418854, 0.00751257, -0.662423 )
@@ -48,8 +50,8 @@ omni_range = 5.02484
 
 [node name="Fire3" parent="Flames" groups=[
 "Fire",
-] instance=ExtResource( 2 )]
-transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -11, 3, -14 )
+] instance=ExtResource( 3 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -11, 1.85565, -14 )
 
 [node name="OmniLight3" type="OmniLight" parent="Flames/Fire3"]
 transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -0.962482, 0.0300503, -0.309418 )
@@ -60,7 +62,7 @@ omni_range = 4.95446
 
 [node name="Fire4" parent="Flames" groups=[
 "Fire",
-] instance=ExtResource( 2 )]
+] instance=ExtResource( 3 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.8, 9, 3, -13 )
 
 [node name="OmniLight4" type="OmniLight" parent="Flames/Fire4"]
@@ -72,7 +74,7 @@ omni_range = 5.46375
 
 [node name="Fire5" parent="Flames" groups=[
 "Fire",
-] instance=ExtResource( 2 )]
+] instance=ExtResource( 3 )]
 transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4, 3, 2 )
 
 [node name="OmniLight4" type="OmniLight" parent="Flames/Fire5"]
@@ -84,8 +86,8 @@ omni_range = 3.99338
 
 [node name="Fire6" parent="Flames" groups=[
 "Fire",
-] instance=ExtResource( 2 )]
-transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -10, 3, 8 )
+] instance=ExtResource( 3 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -10, 1.82758, 8 )
 
 [node name="OmniLight5" type="OmniLight" parent="Flames/Fire6"]
 transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -0.0966644, 0.185987, -0.316078 )
