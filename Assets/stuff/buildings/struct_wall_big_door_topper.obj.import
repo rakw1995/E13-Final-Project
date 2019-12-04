@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/struct_wall_big_door_topper.obj-40a866a1dfa70237e03a30a294c0c88c.mesh"
+
+[deps]
+
+files=[ "res://.import/struct_wall_big_door_topper.obj-40a866a1dfa70237e03a30a294c0c88c.mesh" ]
+
+source_file="res://Assets/stuff/buildings/struct_wall_big_door_topper.obj"
+dest_files=[ "res://.import/struct_wall_big_door_topper.obj-40a866a1dfa70237e03a30a294c0c88c.mesh", "res://.import/struct_wall_big_door_topper.obj-40a866a1dfa70237e03a30a294c0c88c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

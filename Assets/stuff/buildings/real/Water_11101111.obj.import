@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Water_11101111.obj-2c242058630b59fabebe180e8a492c7b.mesh"
+
+[deps]
+
+files=[ "res://.import/Water_11101111.obj-2c242058630b59fabebe180e8a492c7b.mesh" ]
+
+source_file="res://Assets/stuff/buildings/real/Water_11101111.obj"
+dest_files=[ "res://.import/Water_11101111.obj-2c242058630b59fabebe180e8a492c7b.mesh", "res://.import/Water_11101111.obj-2c242058630b59fabebe180e8a492c7b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/prop_wall_big_door_wood.obj-69a306f339c0939ebf30652a6661f7af.mesh"
+
+[deps]
+
+files=[ "res://.import/prop_wall_big_door_wood.obj-69a306f339c0939ebf30652a6661f7af.mesh" ]
+
+source_file="res://Assets/stuff/buildings/prop_wall_big_door_wood.obj"
+dest_files=[ "res://.import/prop_wall_big_door_wood.obj-69a306f339c0939ebf30652a6661f7af.mesh", "res://.import/prop_wall_big_door_wood.obj-69a306f339c0939ebf30652a6661f7af.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

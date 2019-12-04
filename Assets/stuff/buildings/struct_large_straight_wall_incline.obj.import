@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/struct_large_straight_wall_incline.obj-c9db12e81558bbdff6486f5f98e06169.mesh"
+
+[deps]
+
+files=[ "res://.import/struct_large_straight_wall_incline.obj-c9db12e81558bbdff6486f5f98e06169.mesh" ]
+
+source_file="res://Assets/stuff/buildings/struct_large_straight_wall_incline.obj"
+dest_files=[ "res://.import/struct_large_straight_wall_incline.obj-c9db12e81558bbdff6486f5f98e06169.mesh", "res://.import/struct_large_straight_wall_incline.obj-c9db12e81558bbdff6486f5f98e06169.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

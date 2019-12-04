@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/struct_pillar_angled_top.obj-147bae4f1f96b1153f07a659075a4b33.mesh"
+
+[deps]
+
+files=[ "res://.import/struct_pillar_angled_top.obj-147bae4f1f96b1153f07a659075a4b33.mesh" ]
+
+source_file="res://Assets/stuff/buildings/struct_pillar_angled_top.obj"
+dest_files=[ "res://.import/struct_pillar_angled_top.obj-147bae4f1f96b1153f07a659075a4b33.mesh", "res://.import/struct_pillar_angled_top.obj-147bae4f1f96b1153f07a659075a4b33.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

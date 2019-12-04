@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/struct_wall_curved_topper.obj-f7282e9ebc60d8c466d78736de011b75.mesh"
+
+[deps]
+
+files=[ "res://.import/struct_wall_curved_topper.obj-f7282e9ebc60d8c466d78736de011b75.mesh" ]
+
+source_file="res://Assets/stuff/buildings/struct_wall_curved_topper.obj"
+dest_files=[ "res://.import/struct_wall_curved_topper.obj-f7282e9ebc60d8c466d78736de011b75.mesh", "res://.import/struct_wall_curved_topper.obj-f7282e9ebc60d8c466d78736de011b75.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

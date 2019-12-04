@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Metal18_col.jpg" type="Texture" id=1]
 [ext_resource path="res://Scenes/Character.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@ albedo_texture = ExtResource( 1 )
 [sub_resource type="Animation" id=2]
 resource_name = "flicker1"
 length = 2.0
+loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:omni_range")
 tracks/0/interp = 1
@@ -26,6 +27,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=3]
 resource_name = "flicker2"
+loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:omni_range")
 tracks/0/interp = 1
@@ -41,6 +43,54 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=4]
 resource_name = "flicker3"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:omni_range")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.3, 0.5, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 4.95446, 4.59732, 5.22647, 4.28856, 4.55492 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "flicker4"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:omni_range")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.5, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 4.99661, 5.61725, 6.56536, 5.61047, 4.94049, 5.74659 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "flicker5"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:omni_range")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5, 0.7, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 3.99338, 5.0, 3.0, 3.5, 4.0, 3.0 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "flicker6"
 
 [node name="Revelation" type="Spatial"]
 
@@ -68,9 +118,10 @@ transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0.916327, 2.01202, 0 )
 light_energy = 1.5
 light_indirect_energy = 0.0
 shadow_enabled = true
-omni_range = 5.64524
+omni_range = 5.21833
 
 [node name="flicker1" type="AnimationPlayer" parent="Flames/Fire/OmniLight"]
+autoplay = "flicker1"
 anims/flicker1 = SubResource( 2 )
 
 [node name="Fire2" parent="Flames" groups=[
@@ -83,9 +134,10 @@ transform = Transform( 3.33333, 0, 0, 0, 1.25, 0, 0, 0, 1.42857, 0.00418854, 0.0
 light_energy = 1.5
 light_indirect_energy = 0.0
 shadow_enabled = true
-omni_range = 6.01153
+omni_range = 5.18854
 
 [node name="flicker2" type="AnimationPlayer" parent="Flames/Fire2/OmniLight2"]
+autoplay = "flicker2"
 anims/flicker2 = SubResource( 3 )
 
 [node name="Fire3" parent="Flames" groups=[
@@ -98,9 +150,10 @@ transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -0.962482, 0.0300503, -0.30941
 light_energy = 1.5
 light_indirect_energy = 0.0
 shadow_enabled = true
-omni_range = 4.95446
+omni_range = 4.83359
 
 [node name="flicker3" type="AnimationPlayer" parent="Flames/Fire3/OmniLight3"]
+autoplay = "flicker3"
 anims/flicker3 = SubResource( 4 )
 
 [node name="Fire4" parent="Flames" groups=[
@@ -113,9 +166,11 @@ transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 1.25, 0.302895, 0.0120201, 0.0681
 light_energy = 1.5
 light_indirect_energy = 0.0
 shadow_enabled = true
-omni_range = 5.46375
+omni_range = 5.12271
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Flames/Fire4/OmniLight4"]
+[node name="flicker4" type="AnimationPlayer" parent="Flames/Fire4/OmniLight4"]
+autoplay = "flicker4"
+anims/flicker4 = SubResource( 5 )
 
 [node name="Fire5" parent="Flames" groups=[
 "Fire",
@@ -127,9 +182,11 @@ transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0.433765, 0.0601006, -0.249
 light_energy = 1.5
 light_indirect_energy = 0.0
 shadow_enabled = true
-omni_range = 3.99338
+omni_range = 4.58517
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Flames/Fire5/OmniLight4"]
+[node name="flicker5" type="AnimationPlayer" parent="Flames/Fire5/OmniLight4"]
+autoplay = "flicker5"
+anims/flicker5 = SubResource( 6 )
 
 [node name="Fire6" parent="Flames" groups=[
 "Fire",
@@ -143,4 +200,5 @@ light_indirect_energy = 0.0
 shadow_enabled = true
 omni_range = 4.94061
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Flames/Fire6/OmniLight5"]
+[node name="flicker6" type="AnimationPlayer" parent="Flames/Fire6/OmniLight5"]
+anims/flicker6 = SubResource( 7 )

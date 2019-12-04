@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/prop_floor_switch.obj-261a44624c048016511a0380b4f1d279.mesh"
+
+[deps]
+
+files=[ "res://.import/prop_floor_switch.obj-261a44624c048016511a0380b4f1d279.mesh" ]
+
+source_file="res://Assets/stuff/buildings/prop_floor_switch.obj"
+dest_files=[ "res://.import/prop_floor_switch.obj-261a44624c048016511a0380b4f1d279.mesh", "res://.import/prop_floor_switch.obj-261a44624c048016511a0380b4f1d279.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

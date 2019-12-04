@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/ConnectE-N.obj-f6b42c804dc33a30d6b6f6807199cb33.mesh"
+
+[deps]
+
+files=[ "res://.import/ConnectE-N.obj-f6b42c804dc33a30d6b6f6807199cb33.mesh" ]
+
+source_file="res://Assets/stuff/buildings/real/ConnectE-N.obj"
+dest_files=[ "res://.import/ConnectE-N.obj-f6b42c804dc33a30d6b6f6807199cb33.mesh", "res://.import/ConnectE-N.obj-f6b42c804dc33a30d6b6f6807199cb33.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

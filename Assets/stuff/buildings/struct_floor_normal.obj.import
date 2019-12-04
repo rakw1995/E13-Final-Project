@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/struct_floor_normal.obj-ced2d172d4d424ad93366f52874475cd.mesh"
+
+[deps]
+
+files=[ "res://.import/struct_floor_normal.obj-ced2d172d4d424ad93366f52874475cd.mesh" ]
+
+source_file="res://Assets/stuff/buildings/struct_floor_normal.obj"
+dest_files=[ "res://.import/struct_floor_normal.obj-ced2d172d4d424ad93366f52874475cd.mesh", "res://.import/struct_floor_normal.obj-ced2d172d4d424ad93366f52874475cd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

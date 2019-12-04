@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/struct_block_tapered.obj-ce986ce76e272889f8e3c81ff1f9b09c.mesh"
+
+[deps]
+
+files=[ "res://.import/struct_block_tapered.obj-ce986ce76e272889f8e3c81ff1f9b09c.mesh" ]
+
+source_file="res://Assets/stuff/buildings/struct_block_tapered.obj"
+dest_files=[ "res://.import/struct_block_tapered.obj-ce986ce76e272889f8e3c81ff1f9b09c.mesh", "res://.import/struct_block_tapered.obj-ce986ce76e272889f8e3c81ff1f9b09c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

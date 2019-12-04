@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/prop_wall_door_cell.obj-96a128858c3b5e17ef62086a74603622.mesh"
+
+[deps]
+
+files=[ "res://.import/prop_wall_door_cell.obj-96a128858c3b5e17ef62086a74603622.mesh" ]
+
+source_file="res://Assets/stuff/buildings/prop_wall_door_cell.obj"
+dest_files=[ "res://.import/prop_wall_door_cell.obj-96a128858c3b5e17ef62086a74603622.mesh", "res://.import/prop_wall_door_cell.obj-96a128858c3b5e17ef62086a74603622.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

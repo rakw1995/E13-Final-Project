@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/struct_pillar_mid_wall_main.obj-922a1044c16edce017b523ef746c4ba5.mesh"
+
+[deps]
+
+files=[ "res://.import/struct_pillar_mid_wall_main.obj-922a1044c16edce017b523ef746c4ba5.mesh" ]
+
+source_file="res://Assets/stuff/buildings/struct_pillar_mid_wall_main.obj"
+dest_files=[ "res://.import/struct_pillar_mid_wall_main.obj-922a1044c16edce017b523ef746c4ba5.mesh", "res://.import/struct_pillar_mid_wall_main.obj-922a1044c16edce017b523ef746c4ba5.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

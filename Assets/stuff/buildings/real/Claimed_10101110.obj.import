@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Claimed_10101110.obj-dad0c0a1f5428bd01cd1426ca3aa9227.mesh"
+
+[deps]
+
+files=[ "res://.import/Claimed_10101110.obj-dad0c0a1f5428bd01cd1426ca3aa9227.mesh" ]
+
+source_file="res://Assets/stuff/buildings/real/Claimed_10101110.obj"
+dest_files=[ "res://.import/Claimed_10101110.obj-dad0c0a1f5428bd01cd1426ca3aa9227.mesh", "res://.import/Claimed_10101110.obj-dad0c0a1f5428bd01cd1426ca3aa9227.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

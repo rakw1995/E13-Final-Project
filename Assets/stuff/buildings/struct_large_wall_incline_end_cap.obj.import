@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/struct_large_wall_incline_end_cap.obj-3210e172986601124473c636fa8c39c7.mesh"
+
+[deps]
+
+files=[ "res://.import/struct_large_wall_incline_end_cap.obj-3210e172986601124473c636fa8c39c7.mesh" ]
+
+source_file="res://Assets/stuff/buildings/struct_large_wall_incline_end_cap.obj"
+dest_files=[ "res://.import/struct_large_wall_incline_end_cap.obj-3210e172986601124473c636fa8c39c7.mesh", "res://.import/struct_large_wall_incline_end_cap.obj-3210e172986601124473c636fa8c39c7.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

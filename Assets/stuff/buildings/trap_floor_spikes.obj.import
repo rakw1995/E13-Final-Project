@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/trap_floor_spikes.obj-7a3576106b52b46bf1c5794fb053117a.mesh"
+
+[deps]
+
+files=[ "res://.import/trap_floor_spikes.obj-7a3576106b52b46bf1c5794fb053117a.mesh" ]
+
+source_file="res://Assets/stuff/buildings/trap_floor_spikes.obj"
+dest_files=[ "res://.import/trap_floor_spikes.obj-7a3576106b52b46bf1c5794fb053117a.mesh", "res://.import/trap_floor_spikes.obj-7a3576106b52b46bf1c5794fb053117a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

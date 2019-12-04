@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/trap_pillar_pipe.obj-533c4f420be42bbe147d246d33360cc1.mesh"
+
+[deps]
+
+files=[ "res://.import/trap_pillar_pipe.obj-533c4f420be42bbe147d246d33360cc1.mesh" ]
+
+source_file="res://Assets/stuff/buildings/trap_pillar_pipe.obj"
+dest_files=[ "res://.import/trap_pillar_pipe.obj-533c4f420be42bbe147d246d33360cc1.mesh", "res://.import/trap_pillar_pipe.obj-533c4f420be42bbe147d246d33360cc1.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

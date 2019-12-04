@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Dirt_11101011.obj-f8bd1f0943ce97d2992f34592d5900fe.mesh"
+
+[deps]
+
+files=[ "res://.import/Dirt_11101011.obj-f8bd1f0943ce97d2992f34592d5900fe.mesh" ]
+
+source_file="res://Assets/stuff/buildings/real/Dirt_11101011.obj"
+dest_files=[ "res://.import/Dirt_11101011.obj-f8bd1f0943ce97d2992f34592d5900fe.mesh", "res://.import/Dirt_11101011.obj-f8bd1f0943ce97d2992f34592d5900fe.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

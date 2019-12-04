@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/prop_floor_barrel.obj-6bdfd3dbf33239861627e08b4c65fcbc.mesh"
+
+[deps]
+
+files=[ "res://.import/prop_floor_barrel.obj-6bdfd3dbf33239861627e08b4c65fcbc.mesh" ]
+
+source_file="res://Assets/stuff/buildings/prop_floor_barrel.obj"
+dest_files=[ "res://.import/prop_floor_barrel.obj-6bdfd3dbf33239861627e08b4c65fcbc.mesh", "res://.import/prop_floor_barrel.obj-6bdfd3dbf33239861627e08b4c65fcbc.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

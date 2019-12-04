@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/struct_wall_cracked_4.obj-fae46fe93f8027d962b87f3984986875.mesh"
+
+[deps]
+
+files=[ "res://.import/struct_wall_cracked_4.obj-fae46fe93f8027d962b87f3984986875.mesh" ]
+
+source_file="res://Assets/stuff/buildings/struct_wall_cracked_4.obj"
+dest_files=[ "res://.import/struct_wall_cracked_4.obj-fae46fe93f8027d962b87f3984986875.mesh", "res://.import/struct_wall_cracked_4.obj-fae46fe93f8027d962b87f3984986875.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/trap_floor_saw_slot_mid.obj-3eb4586e857a6b02a31d8efb14ddcbf8.mesh"
+
+[deps]
+
+files=[ "res://.import/trap_floor_saw_slot_mid.obj-3eb4586e857a6b02a31d8efb14ddcbf8.mesh" ]
+
+source_file="res://Assets/stuff/buildings/trap_floor_saw_slot_mid.obj"
+dest_files=[ "res://.import/trap_floor_saw_slot_mid.obj-3eb4586e857a6b02a31d8efb14ddcbf8.mesh", "res://.import/trap_floor_saw_slot_mid.obj-3eb4586e857a6b02a31d8efb14ddcbf8.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

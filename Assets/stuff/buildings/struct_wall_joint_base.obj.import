@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/struct_wall_joint_base.obj-86820d000c715e266deeac4dbf925414.mesh"
+
+[deps]
+
+files=[ "res://.import/struct_wall_joint_base.obj-86820d000c715e266deeac4dbf925414.mesh" ]
+
+source_file="res://Assets/stuff/buildings/struct_wall_joint_base.obj"
+dest_files=[ "res://.import/struct_wall_joint_base.obj-86820d000c715e266deeac4dbf925414.mesh", "res://.import/struct_wall_joint_base.obj-86820d000c715e266deeac4dbf925414.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

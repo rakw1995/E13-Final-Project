@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/struct_wall_sewer_base.obj-f0a479a3aac1d39b3ed2829da99045ca.mesh"
+
+[deps]
+
+files=[ "res://.import/struct_wall_sewer_base.obj-f0a479a3aac1d39b3ed2829da99045ca.mesh" ]
+
+source_file="res://Assets/stuff/buildings/struct_wall_sewer_base.obj"
+dest_files=[ "res://.import/struct_wall_sewer_base.obj-f0a479a3aac1d39b3ed2829da99045ca.mesh", "res://.import/struct_wall_sewer_base.obj-f0a479a3aac1d39b3ed2829da99045ca.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
