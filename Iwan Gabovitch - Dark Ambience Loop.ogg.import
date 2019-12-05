@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Iwan Gabovitch - Dark Ambience Loop.ogg-f440a2cb4b947e3bd7ea35ddcf11c98b.oggstr"
+
+[deps]
+
+source_file="res://Iwan Gabovitch - Dark Ambience Loop.ogg"
+dest_files=[ "res://.import/Iwan Gabovitch - Dark Ambience Loop.ogg-f440a2cb4b947e3bd7ea35ddcf11c98b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

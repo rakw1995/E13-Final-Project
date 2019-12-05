@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Scenes/Witch.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/Character.gd" type="Script" id=2]
@@ -6,9 +6,10 @@
 [ext_resource path="res://Scenes/Fireball.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Map.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/Area.gd" type="Script" id=6]
+[ext_resource path="res://Searching.ogg" type="AudioStream" id=7]
 
 [sub_resource type="SpatialMaterial" id=1]
-albedo_color = Color( 0.270588, 0.298039, 0.47451, 1 )
+albedo_color = Color( 0.807843, 0.592157, 1, 1 )
 albedo_texture = ExtResource( 3 )
 
 [sub_resource type="Animation" id=2]
@@ -100,7 +101,7 @@ resource_name = "flicker6"
 [node name="Revelation" type="Spatial"]
 
 [node name="Witch" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.2313, 1.19547, -6.56295 )
+transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, -21.2313, 1.19547, -6.56295 )
 script = ExtResource( 2 )
 
 [node name="CSGBox" type="CSGBox" parent="."]
@@ -220,3 +221,7 @@ script = ExtResource( 6 )
 [node name="CollisionShape" type="CollisionShape" parent="Area"]
 transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 5.1642, 5.16112, 5.95486 )
 shape = SubResource( 8 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+autoplay = true

@@ -10,10 +10,11 @@
 [sub_resource type="Animation" id=2]
 resource_name = "typing"
 length = 7.0
+loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:visible_characters")
 tracks/0/interp = 1
-tracks/0/loop_wrap = true
+tracks/0/loop_wrap = false
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
@@ -56,6 +57,7 @@ custom_constants/line_spacing = 8
 custom_constants/shadow_offset_y = 3
 text = "REVELATION"
 align = 1
+percent_visible = 0.3
 
 [node name="typing" type="AnimationPlayer" parent="Title"]
 autoplay = "typing"
