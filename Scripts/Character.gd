@@ -2,13 +2,18 @@ extends KinematicBody
 
 onready var camera = $Pivot/Camera
 
+var HP = 100
 var gravity = -30
 var max_speed = 8
 var mouse_sensitivity = 0.002
-var jump_speed = 12
 
 var velocity = Vector3()
-var jump = false
+
+var Bullet = preload("res://Scenes/Bullet2.tscn")
+
+func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	G.player = self
 
 func get_input():
     var input_dir = Vector3()
@@ -28,7 +33,12 @@ func _unhandled_input(event):
     if event is InputEventMouseMotion:
         rotate_y(-event.relative.x * mouse_sensitivity)
         $Pivot.rotate_x(-event.relative.y * mouse_sensitivity)
-        $Pivot.rotation.x = clamp($Pivot.rotation.x, -1.2, 1.2)
+        $Pivot.rotation.x = clamp($Pivot.rotation.x, 0, 0)
+
+    if event.is_action_pressed("attack"):
+        var b = Bullet.instance()
+        b.start($Position3D.global_transform)
+        get_parent().add_child(b)
         
 
 func _physics_process(delta):
@@ -38,5 +48,5 @@ func _physics_process(delta):
 	velocity.x = desired_velocity.x
 	velocity.z = desired_velocity.z
 	velocity = move_and_slide(velocity, Vector3.UP, true)
-	if jump and is_on_floor():
-		velocity.y = jump_speed
+	if HP > 0 and HP < 0.5:
+		get_tree().change_scene("res://Scenes/End.tscn")

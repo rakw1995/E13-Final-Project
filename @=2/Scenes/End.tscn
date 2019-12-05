@@ -1,0 +1,58 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Assets/al.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scripts/Restart.gd" type="Script" id=2]
+[ext_resource path="res://Assets/AMP.tres" type="DynamicFont" id=3]
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 1, 0, 0, 1, 0, 0, 0, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[node name="End" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 1250.63
+margin_top = -362.775
+margin_right = 2276.63
+margin_bottom = 1030.22
+rect_rotation = 90.0
+texture = SubResource( 2 )
+expand = true
+
+[node name="Restart" type="Button" parent="."]
+margin_left = 2.0
+margin_top = 265.0
+margin_right = 1022.0
+margin_bottom = 369.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 5 )
+custom_styles/disabled = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0.364706, 0, 0, 1 )
+text = "Restart"
+flat = true
+script = ExtResource( 2 )
+
+[node name="Game Over" type="Label" parent="."]
+margin_top = 160.0
+margin_right = 1020.0
+margin_bottom = 273.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Game Over"
+align = 1

@@ -1,0 +1,127 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Assets/Kenney.Particles/fire_01.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Kenney.Particles/smoke_01.png" type="Texture" id=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+flags_unshaded = true
+vertex_color_use_as_albedo = true
+params_blend_mode = 1
+params_billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+albedo_texture = ExtResource( 1 )
+
+[sub_resource type="Curve" id=2]
+min_value = -360.0
+max_value = 360.0
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=3]
+curve = SubResource( 2 )
+
+[sub_resource type="Curve" id=4]
+min_value = -360.0
+max_value = 360.0
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=5]
+curve = SubResource( 4 )
+
+[sub_resource type="Gradient" id=6]
+offsets = PoolRealArray( 0.00740741, 0.125926, 0.318519, 0.451852, 0.977778 )
+colors = PoolColorArray( 0.225769, 0.941708, 0.963768, 1, 0.256559, 0.605727, 0.893456, 1, 0.268982, 0.672391, 0.897362, 1, 0.284081, 0.284081, 0.284081, 1, 0.0161934, 0.281341, 0.829102, 1 )
+
+[sub_resource type="GradientTexture" id=7]
+gradient = SubResource( 6 )
+
+[sub_resource type="Curve" id=8]
+max_value = 3.0
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.625497, 0.8091 ), 0.0, 0.0, 0, 0, Vector2( 0.98944, 0.5451 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=9]
+curve = SubResource( 8 )
+
+[sub_resource type="ParticlesMaterial" id=10]
+emission_shape = 1
+emission_sphere_radius = 0.2
+spread = 1.0
+gravity = Vector3( 0, -3, 0 )
+angular_velocity = 30.0
+angular_velocity_random = 1.0
+angular_velocity_curve = SubResource( 5 )
+linear_accel = 4.0
+angle_random = 1.0
+angle_curve = SubResource( 3 )
+scale = 10.0
+scale_curve = SubResource( 9 )
+color_ramp = SubResource( 7 )
+
+[sub_resource type="QuadMesh" id=11]
+
+[sub_resource type="SpatialMaterial" id=12]
+flags_transparent = true
+flags_unshaded = true
+vertex_color_use_as_albedo = true
+params_blend_mode = 1
+params_billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+albedo_texture = ExtResource( 2 )
+
+[sub_resource type="Gradient" id=13]
+offsets = PoolRealArray( 0, 0.474074, 1 )
+colors = PoolColorArray( 0, 0, 0, 0, 0.474074, 0.474074, 0.474074, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=14]
+gradient = SubResource( 13 )
+
+[sub_resource type="Curve" id=15]
+_data = [ Vector2( 0.129783, 0 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=16]
+curve = SubResource( 15 )
+
+[sub_resource type="ParticlesMaterial" id=17]
+emission_shape = 1
+emission_sphere_radius = 0.2
+spread = 0.0
+gravity = Vector3( 0, 0, 0 )
+angular_velocity = 30.0
+angular_velocity_random = 1.0
+linear_accel = 4.0
+angle = 360.0
+angle_random = 1.0
+scale = 10.0
+scale_curve = SubResource( 16 )
+color_ramp = SubResource( 14 )
+
+[sub_resource type="SphereShape" id=18]
+radius = 2.5
+
+[node name="Fire" type="Spatial"]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+
+[node name="Flame" type="Particles" parent="."]
+transform = Transform( 1, 0, 0, 0, -1, -8.74228e-08, 0, 8.74228e-08, -1, 0, 0, 0 )
+material_override = SubResource( 1 )
+amount = 10
+process_material = SubResource( 10 )
+draw_pass_1 = SubResource( 11 )
+
+[node name="Smoke" type="Particles" parent="."]
+transform = Transform( 1, 0, 0, 0, -1, -8.74228e-08, 0, 8.74228e-08, -1, 0, 0, 0 )
+material_override = SubResource( 12 )
+amount = 10
+lifetime = 1.5
+randomness = 1.0
+process_material = SubResource( 17 )
+draw_pass_1 = SubResource( 11 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.664822 )
+shape = SubResource( 18 )

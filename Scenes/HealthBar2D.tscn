@@ -4,8 +4,9 @@
 [ext_resource path="res://HealthBar2D.gd" type="Script" id=2]
 
 [node name="HealthBar2D" type="TextureProgress"]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_right = 200.0
+margin_bottom = 26.0
+rect_scale = Vector2( 0.7, 0.5 )
 max_value = 10.0
 value = 10.0
 texture_progress = ExtResource( 1 )
