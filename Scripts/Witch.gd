@@ -1,10 +1,11 @@
 extends KinematicBody
 
 onready var camera = $Pivot/Camera
-
+var jump_speed = 12
 var gravity = -30
 var max_speed = 8
 var mouse_sensitivity = 0.002
+var jump = false
 
 var velocity = Vector3()
 
@@ -37,10 +38,12 @@ func _unhandled_input(event):
         
 
 func _physics_process(delta):
-    velocity.y += gravity * delta
-    var desired_velocity = get_input() * max_speed
+	velocity.y += gravity * delta
+	var desired_velocity = get_input() * max_speed
 
-    velocity.x = desired_velocity.x
-    velocity.z = desired_velocity.z
-    velocity = move_and_slide(velocity, Vector3.UP, true)
+	velocity.x = desired_velocity.x
+	velocity.z = desired_velocity.z
+	velocity = move_and_slide(velocity, Vector3.UP, true)
+	if jump and is_on_floor():
+		velocity.y = jump_speed
 	
